@@ -1,0 +1,14 @@
+user@linux:~/hello$ ls -l
+-rw-r--r-- 1 user user 137 Jan  8 07:06 hello_world.c
+-rw-r--r-- 1 user user 215 Jan  8 07:45 makefile
+
+user@linux:~/hello$ make all
+gcc hello_world.c -o hello_world
+objdump -s -d hello_world > hello_world.dis
+
+user@linux:~/hello$ ./hello_world 
+Hello world
+
+user@linux:~/hello$ 
+
+
